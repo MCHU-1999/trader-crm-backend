@@ -1,0 +1,9 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: line-crm-managed-cert
+  annotations:
+    kubernetes.io/ingress-name: line-crm-ingress
+spec:
+  domains:
+    - line-crm.toriii.tw

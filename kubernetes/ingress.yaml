@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: line-crm-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: line-crm-static-ip
+    kubernetes.io/ingress.class: "gce"
+    # networking.gke.io/frontend-config: "line-crm-frontend-config"
+    networking.gke.io/managed-certificates: line-crm-managed-cert
+spec:
+  rules:
+  - host: line-crm.toriii.tw
+    http:
+      paths:
+      - path: /adou/*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: line-bot-adou-service
+            port:
+              number: 80

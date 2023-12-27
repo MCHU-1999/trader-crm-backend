@@ -1,0 +1,32 @@
+{
+  "name": "line-bot-adou",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^7.5.2",
+    "@line/liff": "^2.21.4",
+    "ccxt": "^3.0.79",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "~4.16.1",
+    "google-auth-library": "^8.9.0",
+    "google-spreadsheet": "^4.0.2",
+    "http-errors": "~1.6.3",
+    "jade": "^1.11.0",
+    "mathjs": "^11.8.0",
+    "moment-timezone": "^0.5.43",
+    "mongodb": "^5.2.0",
+    "morgan": "~1.9.1",
+    "node-cron": "^3.0.2",
+    "passport-line": "^0.0.4",
+    "request": "^2.88.2",
+    "seeded-rand": "^2.0.1"
+  }
+}
